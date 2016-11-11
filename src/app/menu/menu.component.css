@@ -1,17 +1,15 @@
 body,html{
     height: 100%;
 }
-
-/* remove outer padding */
-.container-main .row{
-    padding: 0px;
-    margin: 0px;
+i{
+    font-size: 2rem;
 }
 
 /*Remove rounded coners*/
 
 nav.sidebar.navbar {
     border-radius: 0px;
+    position: relative;;
 }
 
 nav.sidebar, .container-main{
@@ -93,19 +91,6 @@ nav:hover .forAnimate{
 
 /*small/medium side display*/
 @media (min-width: 768px) {
-
-    /*Allow main to be next to Nav*/
-    .container-main{
-        position: absolute;
-        width: calc(100% - 40px); /*keeps 100% minus nav size*/
-        margin-left: 40px;
-        float: right;
-    }
-
-    /*lets nav bar to be showed on mouseover*/
-    nav.sidebar:hover + .container-main{
-        margin-left: 300px;
-    }
 
     /*Center Brand*/
     nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {

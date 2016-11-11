@@ -22,7 +22,7 @@
                   </a>
                   <ul *ngIf="m.hijos != null"  class="dropdown-menu forAnimate" role="menu">
                       <li *ngFor="let mh of m.hijos">
-                          <a href="#"><span class="material-icons">{{mh.icono}}</span> {{mh.titulo}}</a>
+                          <a href="#"><i class="fa {{mh.icono}}"></i> {{mh.titulo}}</a>
                       </li>
                   </ul>
                 </li>

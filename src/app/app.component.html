@@ -1,13 +1,16 @@
 <!-- Based on http://bootsnipp.com/snippets/featured/responsive-sidebar-menu -->
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <app-menu></app-menu>
-<div class="container-main container-fluid">
-    <div class="row">
-        <div class="col-md-6">
-            <hero-view [title]="'Batman'" [poder]="'Super Inteligente'"></hero-view>
-            <hero-view [title]="'Superman'" [poder]="'Super fuerza'"></hero-view>
-            <hero-view [title]="'Wonder Woman'" [poder]="'Super Agilidad y poder de los dioses'"></hero-view>
-        </div>
+<div class="container-main">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <hero-view [title]="'Batman'" [poder]="'Super Inteligente'"></hero-view>
+                <hero-view [title]="'Superman'" [poder]="'Super fuerza'"></hero-view>
 
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <hero-view [title]="'Wonder Woman'" [poder]="'Super Agilidad y poder de los dioses'"></hero-view>
+            </div>
+        </div>
     </div>
 </div>

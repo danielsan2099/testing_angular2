@@ -9,10 +9,15 @@ export class MenuComponent implements OnInit {
     public menus: Menu[];
     constructor() {
         this.menus = [
-            new Menu('Home', '#/', 'fa_info', 'link', null),
-            new Menu('Menus', '#/menus', 'fa_info', 'link', [
-                                                new Menu('Editar', '#/menus/editar', 'add', 'link', null),
-                                                new Menu('Crear', '#/menus/crear', 'sort', 'link', null)
+            new Menu('Home', '#', 'fa-home', 'link', null),
+            new Menu('Menus', '#', 'fa-bars', 'link', [
+                                                new Menu('Crear', '#/menus/crear', 'fa-plus', 'link', null),
+                                                new Menu('Editar', '#/menus/editar', 'fa-pencil', 'link', null)
+                                        ]),
+            new Menu('Companies', '#', 'fa-building', 'link', [
+                                                new Menu('My Companies', '#/company/my', 'fa-building-o', 'link', null),
+                                                new Menu('Merge Companies', '#/company/crear', 'fa-code-fork', 'link', null),
+                                                new Menu('Copy Company', '#/company/editar', 'fa-files-o', 'link', null)
                                         ]),
         ];
     }
