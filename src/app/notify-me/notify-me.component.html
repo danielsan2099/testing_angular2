@@ -1,6 +1,8 @@
-<a class="boton">
-  Notify Me!!!
-</a>
-<div class="ventana">
-  hola
+<div class="contenedor">
+    <a class="boton" (click)='btn_click()'>
+      Notify Me!!!
+    </a>
+    <div class="ventana" *ngIf='is_visible'>
+      hola
+    </div>
 </div>

@@ -9,6 +9,11 @@
     width: 100%; /*keeps 100% minus nav size*/
     float: right;
 }
+notify-me{
+    position: relative;
+    display: flex;
+    width: auto;
+}
 @media (min-width: 768px) {
 
     /*Allow main to be next to Nav*/

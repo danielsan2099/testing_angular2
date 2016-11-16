@@ -1,3 +1,7 @@
+.contenedor{
+    position: relative;
+    display: flex;
+}
 .boton{
   padding: 5px 10px;
   border: 1px solid #f45;
@@ -6,4 +10,21 @@
   text-decoration: none;
   cursor: pointer;
   color: white;
+  -moz-user-select: none;
+  -webkit-user-select: none; 
+  -ms-user-select:none; 
+  user-select:none;
+  -o-user-select:none;
+}
+.ventana{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: #46aeb1;
+    z-index: 8001;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
 }
