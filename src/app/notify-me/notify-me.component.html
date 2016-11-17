@@ -1,8 +1,8 @@
 <div class="contenedor">
-    <a class="boton" (click)='btn_click()'>
-      Notify Me!!!
-    </a>
-    <div class="ventana mdl-card mdl-shadow--8dp" *ngIf='is_visible'>
+    <button class="boton mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" (click)='btn_click()'>
+  <i class="material-icons">add</i>
+</button>
+    <div class="ventana md-whiteframe-8dp" *ngIf='is_visible'>
         <div class="flecha"></div>
       hola
     </div>

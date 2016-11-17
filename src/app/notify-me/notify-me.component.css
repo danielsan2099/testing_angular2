@@ -3,18 +3,7 @@
     display: flex;
 }
 .boton{
-  padding: 5px 10px;
-  border: 1px solid #f45;
-  border-radius: 5px;
-  background-color: #f66;
-  text-decoration: none;
-  cursor: pointer;
-  color: white;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select:none;
-  user-select:none;
-  -o-user-select:none;
+
 }
 .ventana{
     position: absolute;
