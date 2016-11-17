@@ -11,20 +11,37 @@
   cursor: pointer;
   color: white;
   -moz-user-select: none;
-  -webkit-user-select: none; 
-  -ms-user-select:none; 
+  -webkit-user-select: none;
+  -ms-user-select:none;
   user-select:none;
   -o-user-select:none;
 }
 .ventana{
     position: absolute;
-    top: 100%;
+    top: calc(100% + 7px);
     left: 50%;
     width: 300px;
     height: 150px;
+    padding: 16px;
     border-radius: 5px;
     background-color: #46aeb1;
+    font-size: 1rem;
     z-index: 8001;
+    overflow: visible;
     transform: translate(-50%, 0%);
     -webkit-transform: translate(-50%, 0%);
+}
+.ventana .flecha{
+    position: absolute;
+    display: block;
+    background-color: #46aeb1;
+    top: 0px;
+    left: 50%;
+    z-index: 8002;
+    width: 10px;
+    height: 10px;
+    transform : translate(-50%, -5px) rotate(45deg);
+	-moz-transform : translate(-50%, -5px) rotate(45deg); /* Firefox */
+	-webkit-transform : translate(-50%, -5px) rotate(45deg); /* Chrome - Safari */
+	-o-transform : translate(-50%, -5px) rotate(45deg); /* Opera */
 }
