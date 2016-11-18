@@ -135,7 +135,7 @@ nav:hover .forAnimate{
         height: 100%;
         margin-left: -250px;
         float: left;
-        z-index: 8000;
+        z-index: 200;
         margin-bottom: 0px;
     }
 

@@ -1,9 +1,28 @@
 <div class="contenedor">
-    <button class="boton mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" (click)='btn_click()'>
+    <button class="boton mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="btn_dialog" >
   <i class="material-icons">add</i>
+
 </button>
-    <div class="ventana md-whiteframe-8dp" *ngIf='is_visible'>
-        <div class="flecha"></div>
-      hola
+    <div class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect"  for="btn_dialog">
+
+          <li class="mdl-list__item mdl-list__item--two-line">
+            <span class="mdl-list__item-primary-content">
+                Bryan Cranston
+            </span>
+            <hr>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+              Button
+            </button>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              Aaron Paul
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              Bob Odenkirk
+            </span>
+          </li>
     </div>
 </div>
