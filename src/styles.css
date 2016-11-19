@@ -2,3 +2,32 @@
 body,html{
     height: 100%;
 }
+app-root:before {
+    background-color: #009688;
+    content: '';
+    height: 265px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+body{
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #5e5e5e;
+    background-color: #edecec;
+}
+#main {
+    position: relative;
+}
+.mdl-card{
+    width: 100%;
+    padding: 16px;
+}
+
+@media (min-width: 1280px){
+    #main {
+        padding: 0 40px 30px 270px;
+        min-height: calc(100vh - 159px);
+    }
+}

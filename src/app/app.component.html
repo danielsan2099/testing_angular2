@@ -1,16 +1,24 @@
 <!-- Based on http://bootsnipp.com/snippets/featured/responsive-sidebar-menu -->
-<app-menu></app-menu>
-<div class="container-main">
-    <div class="container-fluid">
+<header id="header">
+    <div class="pull-left h-logo">
+        a
+    </div>
+</header>
+<section id="main">
+    <div id="s-main-menu">
+        <app-menu></app-menu>
+    </div>
+    <div id="content" >
         <div class="row">
             <div class="col-md-6 col-sm-6">
-                <hero-view [title]="'Batman'" [poder]="'Super Inteligente'"></hero-view>
-                <hero-view [title]="'Superman'" [poder]="'Super fuerza'"></hero-view>
+                <hero-view class="mdl-card mdl-shadow--2dp" [title]="'Batman'" [poder]="'Super Inteligente'"></hero-view>
+                <br>
+                <hero-view class="mdl-card mdl-shadow--2dp" [title]="'Superman'" [poder]="'Super fuerza'"></hero-view>
                 <notify-me></notify-me>
             </div>
             <div class="col-md-6 col-sm-6">
-                <hero-view [title]="'Wonder Woman'" [poder]="'Super Agilidad y poder de los dioses'"></hero-view>
+                <hero-view class="mdl-card mdl-shadow--2dp" [title]="'Wonder Woman'" [poder]="'Super Agilidad y poder de los dioses'"></hero-view>
             </div>
         </div>
     </div>
-</div>
+</section>
