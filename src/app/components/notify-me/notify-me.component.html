@@ -1,0 +1,27 @@
+<div class="contenedor">
+    <button class="boton mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="btn_dialog" (click)="btn_click()">
+        <i class="material-icons">perm_phone_msg</i>
+    </button>
+    <div class="ventana mdl-js-ripple-effect" [hidden]="!is_visible">
+        <li>
+          <div class="head_notify">
+            Dato 1
+          </div>
+          <div class="action_notify">
+            <div class="btn-cancel pull-left">Cancelar</div>
+            <div class="btn-cancel pull-left">Aceptar</div>
+            <div class="clear"></div>
+          </div>
+        </li>
+        <li>
+          <div class="head_notify">
+            Dato 2
+          </div>
+          <div class="action_notify">
+            <div class="btn-cancel pull-left">Cancelar</div>
+            <div class="btn-cancel pull-left">Aceptar</div>
+            <div class="clear"></div>
+          </div>
+        </li>
+    </div>
+</div>
