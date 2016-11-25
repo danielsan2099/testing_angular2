@@ -1,0 +1,13 @@
+.head_notify{
+    padding: 16px;
+}
+li{
+  list-style: none;
+}
+.clear{
+    clear: both;
+}
+.btn_not{
+    padding: 16px;
+    cursor: pointer;
+}

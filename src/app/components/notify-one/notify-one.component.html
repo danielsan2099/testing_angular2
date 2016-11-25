@@ -1,0 +1,21 @@
+<li>
+    <div class="head_notify">
+        {{texto}}
+    </div>
+    <div [ngSwitch]="tipo">
+        <div class="action_notify" *ngSwitchCase="'confirm'">
+            <div class="mdl-button mdl-js-button pull-right">Cancelar</div>
+            <div class="mdl-button mdl-js-button pull-right">Aceptar</div>
+            <div class="clear"></div>
+        </div>
+        <div class="action_notify" *ngSwitchCase="'only_notify'">
+            <div class="mdl-button mdl-js-button pull-right">Cancelar</div>
+            <div class="clear"></div>
+        </div>
+        <div *ngSwitchDefault>
+            Nothing
+        </div>
+    </div>
+
+
+</li>

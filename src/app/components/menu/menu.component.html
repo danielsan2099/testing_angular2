@@ -1,13 +1,12 @@
-
 <ul class="main-menu">
     <li *ngFor="let m of menus"  >
-      <a href="{{m.url}}" class="dropdown-toggle"  data-toggle="dropdown">
-          <i class="pull-left hidden-xs showopacity fa {{m.icono}}"></i> {{m.titulo}} <span *ngIf="m.hijos != null" class="caret"></span>
-      </a>
-      <ul *ngIf="m.hijos != null"  class="dropdown-menu forAnimate " role="menu">
-          <li *ngFor="let mh of m.hijos">
-              <a href="#"><i class="fa {{mh.icono}}"></i> {{mh.titulo}}</a>
-          </li>
-      </ul>
+        <a href="{{m.url}}" class="dropdown-toggle"  data-toggle="dropdown">
+            <i class="pull-left hidden-xs showopacity fa {{m.icono}}"></i> {{m.titulo}} <span *ngIf="m.hijos != null" class="caret"></span>
+        </a>
+        <ul *ngIf="m.hijos != null"  class="dropdown-menu forAnimate " role="menu">
+            <li *ngFor="let mh of m.hijos">
+                <a href="#"><i class="fa {{mh.icono}}"></i> {{mh.titulo}}</a>
+            </li>
+        </ul>
     </li>
 </ul>
